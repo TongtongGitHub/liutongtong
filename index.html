@@ -2,11 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>liutongtong</title>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script type="text/javascript" src="js/assets/jquery.js"></script>	
 	<script type="text/javascript" src="js/assets/class.0.3.2.js"></script>
-	<script type="text/javascript" src="js/assets/slider.js"></script>
 </head>
 <body>
 	<header>
@@ -14,7 +15,8 @@
 			<div class="logo">
 				<a href="#">MR.LIUTONGTONG</a>
 			</div>
-			<nav>
+			<div class="bar J-bar"><i class="fa fa-bars fa-lg"></i></div>
+			<nav class="J-nav">
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
@@ -25,37 +27,47 @@
 		</div>
 	</header>
 	<section class="slider">
-		<div class="slider-content">
-			<div class="slider J-home-slider">
-				<ul class="slider-list J-slider-list">
-					<li>
-						<a href="#">
-							<img src="../image/slide1.jpg" class="banner1" />
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="../image/slide2.jpg" class="banner2"/>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="../image/slide3.jpg" class="banner3"/>
-						</a>
-					</li>
-				</ul>
-				<ul class="slider-control J-slider-control">
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
+		<div class="container">
 		</div>
 	</section>
 	<section class="introdution">
 		<div class="container">
-			<p>Hi, I'm Tongtong Liu, a Front End Developer who focuses on writing clean, elegant and efficient code.</p>
-			<p>Currently I'm working in a e-commerce company in China.</p>
+			<div class="desc">
+				<p>Hi, I'm Tongtong Liu, a Front End Developer who focuses on writing clean, elegant and efficient code.</p>
+				<p>Currently I'm working in a e-commerce company in China.</p>
+			</div>
+		</div>
+	</section>
+	<section class="about">
+		<div class="container">
+			
+			<div class="timeline">
+				<div class="section0 section">
+					<div class="startCircle circle"></div>
+					<div class="line0 line"></div>
+				</div>
+				<div class="section1 section">
+					<div class="circle1 circle"></div>
+					<div class="line1 line"></div>
+					<div class="content1 content-left content"></div>
+				</div>
+				<div class="section2 section">
+					<div class="circle2 circle"></div>
+					<div class="line2 line"></div>
+					<div class="content2 content-right content"></div>
+				</div>
+				<div class="section3 section">
+					<div class="circle3 circle"></div>
+					<div class="line3 line"></div>
+					<div class="content3 content-left content"></div>
+				</div>
+				<div class="section4 section">
+					<div class="circle4 circle"></div>
+					<div class="line4 line"></div>
+					<div class="content4 content-right content"></div>
+					<div class="endCircle circle"></div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="work">
@@ -73,7 +85,31 @@
 			</ul>
 		</div>
 	</section>
-	<section>Contact</section>
+	<section class="contact">
+		<div class="container">
+			<div class="title">
+				<h3>CONTACT ME</h3>
+				<p>Have questions? Send me a note using the form below.</p>
+			</div>
+			<ul>
+				<li class="name">
+					<label>*Name</label>
+					<div><input type="text" name="name"></div>
+				</li>
+				<li class="email">
+					<label>*Email</label>
+					<div><input type="text" name="email"></div>
+				</li>
+				<li class="message">
+					<label>*Message</label>
+					<div><textarea></textarea></div>
+				</li>
+				<li>
+					<input class="btn1" type="submit" name="" value="Submit">
+				</li>
+			</ul>
+		</div>
+	</section>
 	<footer>
 		<div class="container">
 			<div class="links"></div>
