@@ -24,6 +24,29 @@
     .timeline .section .content {
       box-shadow: 1px 1px 5px #ced3d9;
       border-radius: 5px; }
+      .timeline .section .content img {
+        width: 100%;
+        height: 100%; }
+      .timeline .section .content .text {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #fff;
+        font-size: 18px;
+        text-align: center; }
+    .timeline .section .content:hover .text {
+      z-index: 20;
+      background: rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      -webkit-transition: opacity 0.5s;
+      -moz-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+      opacity: 1; }
     .timeline .section .content-left {
       height: 150px;
       width: 45%;
