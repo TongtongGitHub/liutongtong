@@ -22,3 +22,9 @@ a {
   margin: 0 auto;
   height: 500px;
   border: 1px solid #ccc; }
+
+#echarts-sales {
+  width: 1000px;
+  margin: 0 auto;
+  height: 500px;
+  border: 1px solid #ccc; }

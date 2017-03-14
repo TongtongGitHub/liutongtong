@@ -34,7 +34,7 @@ gulp.task('serve',['sass'], function() {
         server: "./"
     });
     gulp.watch("scss/*.scss", ['sass']);
-    gulp.watch(["*.html","page/*.html","css/*.css","js/*.js"]).on('change', reload);
+    gulp.watch(["*.html","page/*.html","css/*.css","js/**/*.js"]).on('change', reload);
 });
 
 gulp.task('clean', function(cb) {
