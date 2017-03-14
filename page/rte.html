@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>rte</title>
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/rte.css">
+	<script type="text/javascript" src="../js/assets/jquery.js"></script>
+	<script type="text/javascript" src="../js/assets/artDialog.js"></script>
+	<script type="text/javascript" src="../js/rte/tinymce.js"></script>
+</head>
+<body>
+	<div class="toolbar">
+		<ul>
+			<li data-command="formatBlock" data-command-value="p">P</li>
+			<li data-command="formatBlock" data-command-value="h1">H1</li>
+			<li data-command="formatBlock" data-command-value="h2">H2</li>
+			<li data-command="formatBlock" data-command-value="h3">H3</li>
+			<li data-command="formatBlock" data-command-value="h4">H4</li>
+			<li data-command="formatBlock" data-command-value="h5">H5</li>
+			<li data-command="formatBlock" data-command-value="h6">H6</li>
+			<li data-command="formatBlock" class="fa fa-quote-left" data-command-value="blockquote"></li>
+			<li data-command="bold" class="fa fa-bold"></li>
+			<li data-command="italic" class="fa fa-italic"></li>
+			<li data-command="underline" class="fa fa-underline"></li>
+			<li data-command="insertUnorderedList" class="fa fa-list-ul"></li>
+			<li data-command="insertOrderedList" class="fa fa-list-ol"></li>
+			<li data-command="indent" class="fa fa-indent"></li>
+			<li data-command="outdent" class="fa fa-outdent"></li>
+			<li data-command="justifyLeft" class="fa fa-align-left"></li>
+			<li data-command="justifyCenter" class="fa fa-align-center"></li>
+			<li data-command="justifyRight" class="fa fa-align-right"></li>
+			<li data-command="foreColor"  data-command-value="#FB0303" class="fa fa-eyedropper"></li>
+			<li data-command="backcolor"  data-command-value="#047AF8" class="fa fa-eyedropper"></li>
+			<li data-command="showLink" class="fa fa-link"></li>
+			<li data-command="insertTable" class="fa fa-table"></li>
+<!-- 			<ul class="sub-options">
+				<li data-command="mceTableInsertRowBefore">Insert row above</li>
+				<li data-command="mceTableInsertRowAfter">Insert row below</li>
+				<li data-command="mceTableInsertColBefore">Insert column before</li>
+				<li data-command="mceTableInsertColAfter">Insert column after</li>
+				<li data-command="mceTableDeleteRow">Delete row</li>
+				<li data-command="mceTableDeleteCol">Delete column</li>
+				<li data-command="mceTableDelete">Delete table</li>
+			</ul> -->
+			<li data-command="insertVideo" class="fa fa-file-video-o"></li>
+			<li data-command="insertImage" class="fa fa-file-image-o"></li>
+			<li data-command="editCode" class="fa fa-code"></li>
+			<li data-command="removeFormat" class="fa fa-times"></li>
+		</ul>
+	</div>
+	<div class="container">
+		<textarea class="rteContent"></textarea>
+	</div>
+	<div class="container">
+		<textarea id="sourceCode" class="sourceCode"></textarea>
+	</div>
+	<script type="text/javascript" src="../js/assets/upload.js"></script>
+	<script type="text/javascript" src="../js/rte/rte_asset_prototype.js"></script>
+	<script type="text/javascript" src="../js/rte/rte.js"></script>
+</body>
+</html>

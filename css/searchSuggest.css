@@ -1,0 +1,37 @@
+html {
+  font: 14px/1.5 Arial, sans-serif; }
+
+html, body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.example {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  height: 800px;
+  padding: 20px; }
+
+.searchSuggest-list {
+  border: 1px solid #ced3d9;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 33, 66, 0.2);
+  position: absolute;
+  z-index: 10;
+  background: #fff;
+  display: none;
+  min-width: 200px; }
+  .searchSuggest-list li {
+    padding: 5px 10px;
+    white-space: nowrap;
+    cursor: pointer; }
+    .searchSuggest-list li:hover {
+      background: #ccc; }
+    .searchSuggest-list li span {
+      color: #F33F3F; }

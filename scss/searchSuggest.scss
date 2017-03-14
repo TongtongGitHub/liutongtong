@@ -1,0 +1,30 @@
+@import "base.scss";
+
+.example {
+	width: 600px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	height: 800px;
+	padding: 20px;
+}
+.searchSuggest-list {
+	border: 1px solid #ced3d9;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0,33,66,0.2);
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    display: none;
+    min-width: 200px;
+    li {
+    	padding: 5px 10px;
+	    white-space: nowrap;
+	    cursor: pointer;
+	    &:hover {
+	    	background: #ccc;
+	    }
+	    span {
+	    	color: #F33F3F;
+	    }
+    }
+}

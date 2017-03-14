@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Router</title>
+	<script type="text/javascript" src="../js/assets/jquery.js"></script>	
+	<script type="text/javascript" src="../js/assets/class.0.3.2.js"></script>
+	<script type="text/javascript" src="../js/router/router.js"></script>
+</head>
+<body>
+
+<a href = '#/name'>name</a>
+	
+	<script type="text/javascript">
+		var router = new CF_Router();
+		router._init();
+		router.map('/name',function(transition){
+						//或者同步执行回调
+						router.syncFun(function(transition){},transition)
+					})
+	</script>
+</body>
+</html>

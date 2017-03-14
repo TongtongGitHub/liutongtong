@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Animate</title>
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+		<script type="text/javascript" src="../js/assets/jquery.js"></script>	
+</head>
+<body>
+	<div class="example1">
+		<p>CSS3 transition transform, ie 10+</p>
+		Username: <input type="text" name="">
+		<div class="message">Only letters, numbers, underscore and hyphens allowed!</div>
+	</div>
+	<div class="example2">
+		<p>CSS3 transition transform, ie 10+</p>
+		<div class="menu">
+			<span>Menu</span>
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+			</ul>
+		</div>
+	</div>
+	<div class="example3">
+		<p>js show(speed) hide(speed), all browsers</p>
+		<div class="menu">
+			<span>Menu</span>
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+			</ul>
+		</div>
+	</div>
+	<div class="example4">
+		<p>js slideDown(speed) slideUp(speed), all browsers</p>
+		<div class="menu">
+			<span>Menu</span>
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+			</ul>
+		</div>
+	</div>
+	<div class="example5">
+		<p>js animate, all browsers</p>
+		<div class="menu">
+			<span>Menu</span>
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(".example3 .menu").on("mouseenter",function(){
+			$(this).find('ul').show(250);
+		});
+		$(".example3 .menu").on("mouseleave",function(){
+			$(this).find('ul').hide(150);
+		});
+		$(".example4 .menu").on("mouseenter",function(){
+			$(this).find('ul').slideDown(250);
+		});
+		$(".example4 .menu").on("mouseleave",function(){
+			$(this).find('ul').slideUp(150);
+		});
+		$(".example5 .menu").on("mouseenter",function(){
+			$(this).find('ul').animate({
+				opacity: 1,
+				left: '40px'
+			},500,'swing');
+		});
+		$(".example5 .menu").on("mouseleave",function(){
+			$(this).find('ul').animate({
+				opacity: 0,
+				left: '0px'
+			},500,'swing');
+		});
+	</script>
+</body>
+</html>

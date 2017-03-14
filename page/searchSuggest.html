@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Search Suggest</title>
+	<link rel="stylesheet" type="text/css" href="../css/searchSuggest.css">
+	<script type="text/javascript" src="../js/assets/jquery.js"></script>	
+	<script type="text/javascript" src="../js/assets/class.0.3.2.js"></script>
+	<script type="text/javascript" src="../js/assets/template.js"></script>
+	<script type="text/javascript" src="../js/searchSuggest/searchSuggest.js"></script>
+</head>
+<body>
+	<div class="example">
+		<form id="searchForm" action="">
+		<select style="display: none" name="selectKey" id="selectKey" class="J-selectKey">
+            <option value="1">产品SKU</option>
+            <option value="2">产品编号</option>
+            <option value="3">ASIN</option>
+        </select>
+		<input type="text" name="input" id="keyword" class="keyword" autocomplete="off">
+		<input type="submit" value="submit">
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		var searchSuggest = new SearchSuggest({
+			carrier: "#keyword",
+			data: [{name: "SKU1",type:"1"},{name: "SKU2",type:"2"},{name: "SKU3",type:"3"}],
+			template: '<li data-input="{input}" data-type="{{=type}}">Search <span>{input}</span> in {{= name}} </li>',
+			form: "searchForm"
+		});
+		searchSuggest.on("selected",function(){
+			$("#searchForm").submit();
+		});
+	</script>
+</body>
+</html>

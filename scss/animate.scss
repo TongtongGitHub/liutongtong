@@ -1,0 +1,86 @@
+@import "base.scss";
+
+.example1, .example2, .example3, .example4, .example5 {
+	width: 800px;
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+	border: 1px solid #ddd;
+	height: 150px;
+}
+.example1 {
+	.message {
+		-moz-transition: .5s cubic-bezier(.25,.1,.3,1.5) transform;
+		-webkit-transition: .5s cubic-bezier(.25,.1,.3,1.5) transform;
+		-ms-transition: .5s cubic-bezier(.25,.1,.3,1.5) transform;
+		transition: .5s cubic-bezier(.25,.1,.3,1.5) transform;
+
+		-moz-transform-origin: 20% -10%;
+		-webkit-transform-origin: 20% -10%;
+		-ms-transform-origin: 20% -10%;
+		transform-origin: 20% -10%;
+
+		width: 250px;
+		height: 60px;
+		border: 1px solid #ccc;
+	}
+	input:not(:focus) + .message {
+		-moz-transform: scale(0);
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0); //失去焦点状态消失
+
+		-moz-transition: .25s transform;
+		-webkit-transition: .25s transform;
+		-ms-transition: .25s transform;
+		transition: .25s transform; //失去焦点时动画
+	}
+}
+
+.example2 {
+	.menu {
+		width: 60px;
+		height: 30px;
+		border: 1px solid #ccc;
+		text-align: center;
+		line-height: 30px;
+		&:hover ul{
+			transform: scale(1);;
+			transform-origin: 0 0%;
+			transition: transform 0.5s;
+		}
+		ul{
+			width: 100px;
+			border: 1px solid #999;
+
+			transform: scale(0);
+			transform-origin: 0 0%;
+			transition: transform 0.2s;
+		}
+	}
+}
+
+.example3, .example4, .example5 {
+	.menu{
+		width: 60px;
+		height: 30px;
+		border: 1px solid #ccc;
+		text-align: center;
+		line-height: 30px;
+		ul {			
+			width: 100px;
+			border: 1px solid #999;
+			display: none
+		}
+	}
+}
+
+.example5 {
+	.menu {
+		ul {
+			position: relative;
+			display: block;
+			opacity: 0;
+			filter:Alpha(opacity=0)
+		}
+	}
+}

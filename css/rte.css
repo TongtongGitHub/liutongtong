@@ -1,0 +1,86 @@
+html {
+  font: 14px/1.5 Arial, sans-serif; }
+
+html, body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  margin: 0 auto;
+  width: 1200px;
+  font-family: arial;
+  padding-top: 40px; }
+
+.toolbar {
+  width: 640px;
+  margin: 0 auto;
+  background: #fafbfc;
+  height: 100px;
+  border: 1px solid #d3dbe2; }
+  .toolbar ul {
+    margin-left: 5px;
+    margin-right: 5px; }
+    .toolbar ul li {
+      margin-top: 5px;
+      float: left;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #d3dbe2;
+      text-align: center;
+      cursor: pointer;
+      line-height: 40px;
+      background: #fff; }
+      .toolbar ul li:hover {
+        background: #d3dbe2; }
+
+.container {
+  clear: left;
+  width: 640px;
+  margin: 0 auto;
+  height: 350px; }
+
+.sourceCode {
+  width: 600px;
+  height: 310px;
+  padding: 20px; }
+
+.dlg-dialog {
+  background: #fff;
+  width: 400px;
+  height: 300px;
+  padding: 20px; }
+  .dlg-dialog .dlg-header {
+    border-bottom: 1px solid #aaa;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px; }
+    .dlg-dialog .dlg-header .dlg-title {
+      float: left; }
+    .dlg-dialog .dlg-header .dlg-close {
+      float: right;
+      cursor: pointer; }
+  .dlg-dialog .dlg-main {
+    clear: left; }
+    .dlg-dialog .dlg-main input {
+      width: 100%; }
+    .dlg-dialog .dlg-main .link, .dlg-dialog .dlg-main .target, .dlg-dialog .dlg-main .title {
+      margin-top: 10px; }
+    .dlg-dialog .dlg-main .video textarea {
+      width: 100%;
+      height: 100px; }
+  .dlg-dialog .dlg-footer {
+    margin-top: 20px;
+    text-align: center; }
+    .dlg-dialog .dlg-footer button {
+      border: 1px solid #ccc;
+      width: 60px;
+      height: 30px;
+      margin-right: 10px;
+      background: #eee;
+      cursor: pointer; }
