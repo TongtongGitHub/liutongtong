@@ -170,17 +170,22 @@ header {
       color: #ff4242; }
 
 .introdution {
-  background: #011627;
+  background: #47a3da;
   height: 500px; }
   .introdution .desc {
-    font-size: 18px;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 24px;
     width: 100%;
     text-align: center;
     color: #fff;
-    padding-top: 200px; }
-    .introdution .desc p {
-      padding: 0;
-      margin: 0; }
+    padding-top: 120px;
+    line-height: 2; }
+    .introdution .desc h1 {
+      opacity: 0;
+      transition: all 1200ms; }
+    .introdution .desc .animate-fadeUp {
+      opacity: 1;
+      transform: translateY(-50%); }
 
 .about {
   background: #EDF2F4;
